@@ -1,0 +1,95 @@
+
+.bodyclass {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hacheunoinicio {
+    color: black;
+    padding: 3px;
+    border: 5px hidden;
+    margin: 3px 3px 3px 3px;
+
+}
+
+.hachetresinicio{
+    text-align: left;
+    margin: 1em 1em 1em;
+
+}
+
+.grillamadre {
+    display: grid;
+    grid-template-areas:
+        "inicioarriba inicioarriba"
+        "inicio inicio"
+        "fototxt fototxt"
+        "topicos topicos"
+        "video video"
+        "carrusel carrusel"
+        "footer footer";
+}
+
+.grillamom {
+    border: 1px;
+
+}
+
+.grillainicio1 {
+    grid-area: inicio;
+}
+
+.grillainicio2 {
+    grid-area: fototxt;
+}
+
+.grillainicio3 {
+    grid-area: topicos;
+}
+
+.grillainicio4 {
+    grid-area: video;
+    height: 100%;
+    width: 100%;
+
+}
+
+.grillainicio5 {
+    grid-area: carrusel;
+}
+
+.grillainicio6 {
+    grid-area: footer;
+}
+
+.grillainicio7 {
+    grid-area: inicioarriba;
+}
+
+.topicos {
+    text-decoration-line: underline;
+    line-height: 23px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    animation: move 3s ease-in-out;
+    list-style-type: none;
+}
+
+span {
+    color: rgb(255, 0, 0);
+}
+
+
+@keyframes move {
+    0% {
+        transform: translate(30%, 0);
+    }
+
+    50% {
+        text-shadow: 0 25px 50px #092327;
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
