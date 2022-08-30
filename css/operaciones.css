@@ -208,6 +208,48 @@ nav ul li a a:hover {
   background-color: #000000;
 }
 
+.grillapapa {
+  display: grid;
+  grid-template-areas: "logo logo" "covid covid" "img img " "txtup imgup" "txtdown imgdown" "footer footer";
+}
+
+.covidgrilla {
+  padding: 1em 1em 1em 1em;
+}
+
+.grillacero {
+  grid-area: logo;
+}
+
+.grillauno {
+  grid-area: covid;
+  width: 100%;
+}
+
+.grillados {
+  grid-area: img;
+}
+
+.grillatres {
+  grid-area: imgup;
+}
+
+.grillacuatro {
+  grid-area: imgdown;
+}
+
+.grillacinco {
+  grid-area: txtup;
+}
+
+.grillaseis {
+  grid-area: txtdown;
+}
+
+.grillasiete {
+  grid-area: footer;
+}
+
 /* Recorridos */
 .logo {
   text-transform: uppercase;
